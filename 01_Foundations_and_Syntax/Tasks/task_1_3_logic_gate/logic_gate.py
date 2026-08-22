@@ -3,7 +3,7 @@ a= bool(int(input("enter value for A (1 or 0)"))).strip()
 b= bool(int(input("enter value for B (1 or 0)"))).strip()
 if gates != "NOT":
     
-    b = bool(int(input_b_str))
+    b = bool(int(b))
 else:
     b = None
 
