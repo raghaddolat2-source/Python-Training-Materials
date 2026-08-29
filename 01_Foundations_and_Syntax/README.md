@@ -112,3 +112,43 @@ Once your solution is ready, verify its logic using the automated test script lo
 cd task_1_4_password_validator
 python test_password_validator.py
 ```
+
+---
+
+## Mini Projects
+
+### The Smart Cinema Ticketing System
+
+**Scenario:**
+You have been contracted to develop a terminal-based ticketing script for a boutique cinema. The cinema currently has a limited number of seats remaining, and your program must automatically process customer requests until the show is entirely sold out.
+
+**Instructions:**
+Write a complete Python script that satisfies all the following business logic and styling requirements:
+
+1. Initialize the system state with a starting inventory of 5 available tickets and a boolean flag indicating the cinema is currently open.
+2. Implement a loop that continuously processes incoming customer transactions as long as the cinema's status remains open.
+3. During each iteration, prompt the user for their name and the exact number of tickets they wish to purchase. Ensure the requested ticket quantity is appropriately converted to an integer for calculation.
+4. Implement conditional logic to handle the following three purchase scenarios:
+    * Valid Purchase: If the requested quantity is greater than 0 and less than or equal to the currently available stock, process the transaction by deducting the tickets from the inventory. Display a formatted success message (e.g., "Success! [Name] bought [X] tickets.").
+    * Oversell Attempt: If the customer requests more tickets than are currently available, deny the transaction and display an apology detailing the exact number of remaining seats.
+    * Invalid Input: If the request is 0 or a negative number, display an error message stating the input is invalid.
+5. After evaluating each transaction, verify the current inventory. If the available ticket count reaches 0, print a "Sold out!" message, update the cinema's status flag to closed, and safely exit the loop.
+6. Ensure your code adheres to professional Python styling standards: use snake_case for all variable names, maintain strict indentation, and include a descriptive multi-line docstring at the very top of your script explaining its purpose.
+
+### The Smart ATM Simulator
+
+**Scenario:**
+You have been tasked with developing a terminal-based Automated Teller Machine (ATM) simulator. The script must allow a user to continuously process withdrawal transactions from their account until their balance is completely depleted.
+
+**Instructions:**
+Write a complete Python script that satisfies all of the following requirements:
+
+1. Initialize the system state with a starting account balance of 200.0 and a boolean flag indicating the ATM session is currently active.
+2. Implement a loop that continuously processes transaction requests as long as the ATM session remains active.
+3. During each iteration, display the current balance and prompt the user to enter a withdrawal amount. Ensure the input is appropriately converted to a floating-point number for accurate financial calculations.
+4. Implement conditional logic to handle the following three withdrawal scenarios:
+    * Valid Withdrawal: If the requested amount is strictly greater than 0 and less than or equal to the current balance, process the transaction by deducting the funds from the account. Display a formatted success message showing the dispensed amount and the newly updated balance.
+    * Insufficient Funds: If the requested amount exceeds the current balance, deny the transaction and display an error message detailing the maximum available funds.
+    * Invalid Input: If the requested amount is 0 or negative, display an error message stating that the withdrawal amount must be strictly greater than zero.
+5. After evaluating each transaction, verify the remaining account balance. If the balance reaches exactly 0.0, print an "Account empty" farewell message, update the ATM session flag to inactive, and safely exit the loop.
+6. Ensure your code adheres to professional Python styling standards: use snake_case for all variable names, maintain strict indentation, and include a descriptive multi-line docstring at the very top of your script explaining its purpose.
