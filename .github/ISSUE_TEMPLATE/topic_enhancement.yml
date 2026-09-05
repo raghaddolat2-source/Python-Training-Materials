@@ -1,0 +1,26 @@
+name: 💡 Suggest a Topic Enhancement
+description: Suggest an improvement, better example, or clarification for an existing topic.
+title: "[Enhancement]: "
+labels: ["enhancement"]
+body:
+  - type: input
+    id: target_topic
+    attributes:
+      label: Target Module and Topic
+      placeholder: e.g., Module 03 - Virtual Environments
+    validations:
+      required: true
+  - type: textarea
+    id: current_state
+    attributes:
+      label: Current State
+      description: What is lacking in the current explanation?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed_enhancement
+    attributes:
+      label: Proposed Enhancement
+      description: How can we make this topic better? What examples or analogies should we add?
+    validations:
+      required: true

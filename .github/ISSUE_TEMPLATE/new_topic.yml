@@ -1,0 +1,24 @@
+name: 📚 Propose a New Topic
+description: Suggest a completely new topic, lesson, or module to add to the curriculum.
+title: "[New Topic]: "
+labels: ["new-content"]
+body:
+  - type: input
+    id: topic_name
+    attributes:
+      label: Proposed Topic Name
+      placeholder: e.g., "Introduction to Object-Oriented Programming"
+    validations:
+      required: true
+  - type: textarea
+    id: learning_objectives
+    attributes:
+      label: Learning Objectives
+      description: What will the student learn from this topic?
+    validations:
+      required: true
+  - type: textarea
+    id: hands_on_task
+    attributes:
+      label: Suggested Hands-On Task (Optional)
+      description: Do you have an idea for a practical exercise to test this knowledge?

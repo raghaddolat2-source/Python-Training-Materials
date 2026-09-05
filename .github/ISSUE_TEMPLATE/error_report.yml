@@ -1,0 +1,36 @@
+name: 🐛 Report an Error
+description: Report incorrect information, typos, or broken code in a module.
+title: "[Bug]: "
+labels: ["bug", "documentation"]
+body:
+  - type: dropdown
+    id: module
+    attributes:
+      label: Which module contains the error?
+      options:
+        - "01: Python Rules & Principles"
+        - "02: Advanced Concepts (Functions, Scope, Exceptions)"
+        - "03: Environment & Tooling"
+        - "Other / General Repository"
+    validations:
+      required: true
+  - type: input
+    id: topic
+    attributes:
+      label: Specific Topic or File Name
+      placeholder: e.g., Task 2.4 Unbreakable Calculator
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of the Error
+      description: What is wrong with the current information or code?
+      placeholder: "The test script fails on line 14 because..."
+    validations:
+      required: true
+  - type: textarea
+    id: proposed_fix
+    attributes:
+      label: Suggested Fix (Optional)
+      description: How should we correct this?
